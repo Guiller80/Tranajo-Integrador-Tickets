@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+
+    <title>Proyecto integrador front Guillermo Paz Rodriguez</title>
+    <link rel="shortcut icon" href="favicon.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <header class="header">
+        <!--las imagenes son etiquetas abiertas y en linea-->
+        <div class="navegacionFlex">
+            <div class="contenedorLogo">     
+        
+                <a href="#">
+                    <img class="Logo" src="./assets/img/codoacodo.png" alt="Logo codo a codo 4.0" loading="lazy" width="100px">
+                </a>
+                <h2>Conf. Bs. As.</h2>
+            </div>
+             
+                <!--etiqueta semantica encargada de la navegacion-->
+                <nav class="navegacion"> 
+                    <!--listas desordenadas-->
+                    <ul class="listaNav">
+                        <li class="listaItem"><a class= "linkNav" href="#oradores">Los oradores</a></li>
+                        <li class="listaItem"><a class= "linkNav" href="#lugarfecha">El lugar y la fecha</a></li>
+                        <li class="listaItem"><a class= "linkNav" href="#formularioOrador">Conviertete en orador</a></li>
+                        <li class="listaItem"><a class= "linkNav" href="./pages/tickets.html">Comprar Tickets</a></li>
+                        <li class="listaItem"><a class= "linkNav" href="#conferencia">La conferencia</a></li>
+                    </ul>
+                </nav>
+        </div>
+  
+        <section id="conferencia">
+          <!--<img src="./assets/img/hawaii.jpg" class="rounded float-start" alt="hawaii"-->
+          <div class="card text-bg-dark">
+            <img src="./assets/img/hawaii.jpg" class="rounded" alt="hawaii" width="100%">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Conf Bs As</h5>
+              <p class="card-text">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+              <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
+              <button type="button" class="btn btn-success">Comprar Tickets</button>
+
+            </div>
+          </div>
+          
+        </section>
+    </header>
+        <div class="container">
+          <h2>CONOCE A LOS</h2> 
+          <h1>ORADORES</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="./assets/img/Steve_jobs.jpg" class="Steve Jobs" alt="Steve Jobs">
+                <div class="card-body">
+                    <span class="badge text-bg-warning">Javascript</span>
+                    <span class="badge text-bg-info">React</span>
+                  <h5 class="card-title">Steve Jobs</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aliquam quod maxime doloribus accusantium, eum labore iure a consequuntur repellendus nihil, ad animi! Maiores harum, at ea eum iure sequi.</p>
+                </div>
+                <div class="card-footer">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./assets/img/Bill_Gates.jpg" class="Bill Gates" alt="Bill Gates">
+                <div class="card-body">
+                    <span class="badge text-bg-warning">Javascript</span>
+                    <span class="badge text-bg-info">React</span>
+                  <h5 class="card-title">Bill Gates</h5>
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati unde tempore enim consequuntur commodi quod voluptate quas quo magni, cum et? Eos tempore maiores laudantium ipsa, quaerat dolorum error iusto!</p>
+                </div>
+                <div class="card-footer">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./assets/img/Ada_Lovelace.jpeg" class="Ada Lovelace" alt="Ada Lovelace">
+                <div class="card-body">
+                    <span class="badge text-bg-secondary">Negocios</span>
+                    <span class="badge text-bg-danger">Startups</span>
+                  <h5 class="card-title">Ada Lovelace</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis quidem quia, dolore nisi nulla cupiditate possimus voluptate adipisci corrupti asperiores architecto aspernatur ex, aut, quaerat enim! Dolore, reiciendis minus!</p>
+                </div>
+                <div class="card-footer">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      <main class="main">
+        
+            <div class="contenedorFlexible">
+                
+                <div class="main__sectionPrincipal__contenedorImg">
+                  <img src="./assets/img/honolulu.jpg" class="img-fluid" alt="honolulu" width="600px"> <!--imagen-->
+                </div>
+                <div class="main__sectionPrincipal__contenedorTexto">
+                    <h2>Bs. As. Octubre</h2>
+                    <p>Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos. Honolulu es la mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere a área urbana en la costa sureste de la isla de Oahu, la ciudad y el concado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</p>
+                    <button type="button" class="btn btn-outline-light">Conocé mas</button>
+
+                </div>
+                
+            </div>
+           
+        
+      </main>
+      <div class="formularioOrador">
+        <section id="formularioOrador">
+            <h2>Conviertete en un orador</h2>
+            <p>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+        </section>
+      </div>
+    </div>
+    
+      <div class="container">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Sobre que querés hablar?</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <p>Recuerda incluir un titulo para tu charla</p>
+          <div class="col-auto">
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="button">Enviar</button>
+
+            </div>
+        </div>
+      </div>
+    
+    <footer>
+        <div class="container">
+
+            <div class="row">
+
+            <div class="col">
+
+            <p> Preguntas frecuentes</p>
+
+            </div>
+
+            <div class="col">
+
+                <p>Contáctanos</p>
+    
+                </div>
+                
+            <div class="col">
+
+                <p>Prensa</p>
+    
+                </div>
+                
+            <div class="col">
+
+                <p>Conferencias</p>
+    
+                </div>
+                
+            <div class="col">
+
+                <p>Términos y Condiciones</p>
+    
+                </div>
+                <div class="col">
+
+                    <p>Privacidad</p>
+        
+                    </div>
+                    <div class="col">
+
+                        <p>Estudiantes</p>
+            
+                        </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

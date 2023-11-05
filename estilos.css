@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navegacionFlex{
+    padding-top:10px;
+    padding-bottom: 10px;
+    /*padding-left: 50px;
+    padding-right: 50px;*/
+    background-color: rgb(48, 43, 43);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    color: white;
+    .contenedorLogo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;/*horizontal*/
+        align-items: center;/*vertical*/
+        flex-wrap: wrap;
+        .logo{
+            width: 100px;
+           
+        }
+    }
+    .navegacion{
+        /*background-color: aquamarine;*/
+        .listaNav{
+            /*background-color: aqua;*/
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            .listaItem{
+                padding-right: 20px;
+                .linkNav{
+                    text-decoration: none;
+                    color:white;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+.conferencia{
+    background-image: url(hawaii.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: end;
+}
+.container{
+    text-align: center;
+
+}
+.main{
+        .contenedorFlexible{
+        display: flex;
+        flex-direction: column-reverse;
+        .main__sectionPrincipal__contenedorImg{
+            width: 100%;
+            height: 50vh;
+            background-image: url("honolulu.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+        .main__sectionPrincipal__contenedorTexto{
+            background-color: gray;
+            width: 100%;
+            height: 60vh;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:space-evenly;
+            line-height: 1.5;
+            color: white;
+    
+        }
+     
+    }
+    .card-group{
+        margin-top: 30px;
+        text-align: center;
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-bottom: 2%;
+        justify-content: space-evenly;
+        display: flex;
+
+    }
+        .card1{
+            border: 2px solid #5056ff;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            transform: translate(70px,1px);
+-webkit-transform: translate(70px,1px);
+-moz-transform: translate(70px,1px);
+
+        }
+        .card2{
+            border: 2px solid #18942d;;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .card3{
+            border: 2px solid #e1d82b;;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            transform: translate(-70px,1px);
+-webkit-transform: translate(-70px,1px);
+-moz-transform: translate(-70px,1px);
+        }
+
+        .Titulo-gral{
+            text-align: center;
+        }
+
+        .Button{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            ;
+        }
+        
+@media screen and (min-width: 0) and (max-width:991px){
+   /*celular - tablet*/
+
+}
+
+
+
+
+
+
+/*tengo que respetar la cascada y la especificidad*/
+@media screen and (min-width:992px){
+    .main{
+        .contenedorFlexible{
+            flex-direction: row;
+            .main__sectionPrincipal__contenedorImg{
+                width: 50%;
+                height: 60vh;
+            }
+            .main__sectionPrincipal__contenedorTexto{
+                width: 50%;
+                height: 60vh;
+            }
+           
+         }
+    }
+
+}
+
+.formularioOrador{ 
+    text-align: center;
+}
+.container {
+    padding-bottom: 1%;
+    
+}   
+.Button{
+    padding-bottom: 20px;
+    
+}
+
+
+footer {
+    padding-top: 20px;
+    background-color: #214d67;
+    color: white;
+}
+

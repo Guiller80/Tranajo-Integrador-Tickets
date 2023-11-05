@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+    <title>Comprar tickets</title>
+    <link rel="shortcut icon" href="favicon.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <header class="header">
+        <!--las imagenes son etiquetas abiertas y en linea-->
+        <div class="navegacionFlex">
+            <div class="contenedorLogo">     
+        
+                <a href="#">
+                    <img class="Logo" src="./assets/img/codoacodo.png" alt="Logo codo a codo 4.0" loading="lazy" width="100px">
+                </a>
+                <h2>Conf. Bs. As.</h2>
+            </div>
+             
+                <!--etiqueta semantica encargada de la navegacion-->
+                <nav class="navegacion"> 
+                    <!--listas desordenadas-->
+                    <ul class="listaNav">
+                        <li class="listaItem"><a class= "linkNav" href="#conferencia">La conferencia</a></li>
+                        <li class="listaItem"><a class= "linkNav" href="#oradores">Los oradores</a></li>
+                        <li class="listaItem"><a class= "linkNav" href="#lugarfecha">El lugar y la fecha</a></li>
+                        <li class="listaItem"><a class= "linkNav" href="#formularioOrador">Conviertete en orador</a></li>
+                        <li class="listaItem"><a class= "linkNav" href="./pages/tickets.html">Comprar Tickets</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <main>
+        <div class="card-group">
+            <div class="card1">
+              <div class="card-body">
+                <h5 class="card-title">Estudiante</h5>
+                <p class="card-text">Tienen un descuento</p>
+                <h5>80%</h5>
+                <p class="card-text"><small class="text-body-secondary">* presentar documentación</small></p>
+              </div>
+            </div>
+            <div class="card2">
+              <div class="card-body">
+                <h5 class="card-title">Trainee</h5>
+                <p class="card-text">Tienen un descuento</p>
+                <h5>50%</h5>
+                <p class="card-text"><small class="text-body-secondary">* presentar documentación</small></p>
+              </div>
+            </div>
+            <div class="card3">
+              <div class="card-body">
+                <h5 class="card-title">Junior</h5>
+                <p class="card-text">Tienen un descuento</p>
+                <h5>15%</h5>
+                <p class="card-text"><small class="text-body-secondary">* presentar documentación</small></p>
+              </div>
+            </div>
+          </div>
+        </main>
+        <div class="Titulo-gral">
+            <h6>VENTA</h6> 
+            <h1>VALOR DE TICKET $200</h1>
+        </div>
+        <form action="" class="form2">
+            <div class="row gx-2">
+              <div class="col-md mb-3">
+                <input type="text" class="form-control" placeholder="Ingrese su Nombre" aria-label="Nombre" id="nombre" required>
+                <div id="mensajeErrorNombre" class="invalid-feedback mostrarError">
+                      Ingrese su <strong>Nombre!</strong>
+                </div>
+              </div>
+              <div class="col-md mb-3">
+                <input type="text" class="form-control" placeholder="Ingrese su Apellido" aria-label="Apellido" id="apellido" required>
+                <div id="mensajeErrorApellido" class="invalid-feedback mostrarError">
+                  Ingrese su <strong>Apellido!</strong>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md mb-3">
+                <input type="email" class="form-control" placeholder="Ingrese su Email" aria-label="Email" id="mail" required>
+                <div id="mensajeErrorEmail" class="invalid-feedback mostrarError">
+                  Ingrese su <strong>Email!</strong>!
+                </div>
+              </div>
+              <div class="row gx-2">
+                <div class="col-md mb-3">
+                  <label for="cantidadTickets" class="form-label">Cantidad</label>
+                  <input type="number" class="form-control" placeholder="Ingrese Cantidad de Tickets" aria-label="Cantidad" id="cantidadTickets" min="1" required>
+                  <div id="mensajeErrorCantidad" class="invalid-feedback mostrarError">
+                    Ingrese <strong> Cantidad de tickets!</strong>
+                  </div>
+                </div>
+                <div class="col-md mb-3">
+                  <label for="categoriaSelect" class="form-label">Categoría</label>
+                  <select class="form-select" aria-label="Categoria" id="categoriaSelect">
+                    <option value="" selected> <strong>...Seleccione...</strong></option>
+                    <option value="0">Sin Categoria</option>
+                    <option value="1">Estudiante</option>
+                    <option value="2">Trainee</option>
+                    <option value="3">Junior</option>
+                  </select>
+                  <div id="mensajeErrorCategoria" class="invalid-feedback mostrarError">
+                    Ingrese su <strong>Categoria!</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="alert alert-primary mt-2 mb-4" role="alert">
+                      <strong>Total a pagar: $</strong> <span id="totalPago" class="align-middle"></span>
+              </div>
+              <div class="Button">
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="button">Borrar</button>
+                <button class="btn btn-primary" type="button">Resumen</button>
+              </div>
+            </div>
+          </form>
+    <footer>
+        <div class="container">
+
+            <div class="row">
+
+            <div class="col">
+
+            <p> Preguntas frecuentes</p>
+
+            </div>
+
+            <div class="col">
+
+                <p>Contáctanos</p>
+    
+                </div>
+                
+            <div class="col">
+
+                <p>Prensa</p>
+    
+                </div>
+                
+            <div class="col">
+
+                <p>Conferencias</p>
+    
+                </div>
+                
+            <div class="col">
+
+                <p>Términos y Condiciones</p>
+    
+                </div>
+                <div class="col">
+
+                    <p>Privacidad</p>
+        
+                    </div>
+                    <div class="col">
+
+                        <p>Estudiantes</p>
+            
+                        </div>
+            </div>
+
+        </div>
+    </footer>
+   
+    <script src="script.js"></script>
+
+  </body>
+</html>
